@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+var j=0;
+function checkAns(){
+	
+	//alert(document.getElementById("2").checked);
+	if(document.getElementById("2").checked){
+		answCount[4]=document.getElementById("2").value;
+		
+		alert(answCount[4]);
+	}
+}
+</script>
+</head>
+<body>
+<form><table>
+<br/>
+<th><h3>5)Which is the first largest populated country in the World? </h3></th>
+<br/>
+<tr><td><input type="radio" name="rb1" id="0">Australia</td></tr>
+<tr><td><input type="radio" name="rb1" id="1">India</td></tr>
+<tr><td><input type="radio" name="rb1" id="2">China</td></tr>
+<tr><td><input type="radio" name="rb1" id="3">South America</td></tr>
+<br/>
+
+</table></form>
+<input type="button" name="btnsub3" id="btnsub3Id" class="btn btn-primary"  value="Previous" onclick="ques4();"/>
+<input type="submit" name="btnsub1" id="btnsub1Id" class="btn btn-primary"  value="save" onclick="checkAns();"/>
+<input type="button" name="btnsub2" id="btnsub2Id" class="btn btn-primary"  value="Next" onclick="ques6();"/>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+ var j=0;
+function checkAns(){
+	
+	alert(document.getElementById("0").checked);
+	if(document.getElementById("0").checked){
+		answCount[7]=document.getElemenetById("0").value;
+		
+		alert(answCount[7]);
+	}
+}
+</script>
+</head>
+<body>
+<form><table>
+<br/>
+<th><h3>8)Which of the following bootstrap style of button indicates caution should be taken with this action?</h3></th>
+<br/>
+<tr><td><input type="radio" name="rb1" id="0">.btn-warning</td></tr>
+<tr><td><input type="radio" name="rb1" id="1">.btn-info</td></tr>
+<tr><td><input type="radio" name="rb1" id="2">.btn-link</td></tr>
+<tr><td><input type="radio" name="rb1" id="3">.btn-danger</td></tr>
+<br/>
+
+</table></form>
+<input type="button" name="btnsub3" id="btnsub3Id" class="btn btn-primary"  value="Previous" onclick="ques7();"/>
+<input type="submit" name="btnsub1" id="btnsub1Id" class="btn btn-primary" value="save" onclick="checkAns();"/>
+<input type="button" name="btnsub2" id="btnsub2Id" class="btn btn-primary" value="Next" onclick="ques9();"/>
+</body>
+</html>

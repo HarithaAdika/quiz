@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+ var j=0;
+function checkAns(){
+	
+	alert(document.getElementById("0").checked);
+	if(document.getElementById("0").checked){
+		answCount[9]=document.getElementById("0").value;
+		alert(answCount[9]);
+	}
+}
+
+
+</script>
+</head>
+<body>
+<form><table>
+<br/>
+<th><h3>10)Which built-in method returns the calling string value converted to lower case?</h3></th>
+<br/>
+<tr><td><input type="radio" name="rb1" id="0">toLowerCase()</td></tr>
+<tr><td><input type="radio" name="rb1" id="1">toUpperCase()</td></tr>
+<tr><td><input type="radio" name="rb1" id="2">tocapitalize()</td></tr>
+<tr><td><input type="radio" name="rb1" id="3">None of the Above</td></tr>
+<br/>
+
+</table></form>
+<input type="button" name="btnsub3" id="btnsub3Id" class="btn btn-primary"  value="Previous" onclick="ques9();"/>
+<input type="submit" name="btnsub1" id="btnsub1Id" class="btn btn-primary" value="save" onclick="checkAns();"/>
+<input type="button" name="btnsub2" id="btnsub2Id"  class="btn btn-primary" value="Next" onclick="calScore()"/>
+</body>
+</html>

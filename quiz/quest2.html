@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script>
+var j=0;
+function checkAns(){
+
+	alert(document.getElementById("0").checked);
+	if(document.getElementById("0").checked){
+		answCount[1]=document.getElementById("0").value;
+		
+		alert(answCount[1]);
+	}
+}
+</script>
+</head>
+<body>
+<form><table>
+<br/>
+<th><h3>2)Which is the biggest mountain in the world ?</h3></th>
+<br/>
+<tr><td><input type="radio" name="rb1" id="0">Mount Everest</td></tr>
+<tr><td><input type="radio" name="rb1" id="1">Kanchenjunga</td></tr>
+<tr><td><input type="radio" name="rb1" id="2">K2 (Mount Godwin Austen)</td></tr>
+<tr><td><input type="radio" name="rb1" id="3">Lhotse</td></tr>
+<br/>
+
+</table></form>
+
+</body>
+<input type="button" name="btnsub2" id="btnsub2Id" class="btn btn-primary" value="Previous" onclick="ques1();"/>
+<input type="submit" name="btnsub1" id="btnsub1Id" class="btn btn-primary" value="save" onclick="checkAns();"/>
+<input type="button" name="btnsub2" id="btnsub2Id" class="btn btn-primary" value="Next" onclick="ques3();"/>
+</html>

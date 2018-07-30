@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+function terms(){
+	var check1=document.getElementById("agreeId");
+	if(check1.checked)
+		{
+$('#div1').load('startpage.html');
+		}
+	else
+		alert("please accept the terms and conditions");
+}
+</script>
+</head>
+<body>
+<div id="div2">
+
+<pre>
+
+<b>Terms and Conditions of the Quiz</b>
+1)The quiz comprises of 20 questions.
+2)No negative marking for the wrong answers.
+3)Each question carries 1 mark.
+4)Need to answer all the questions.
+5)If the quiz is terminated in the middle of the duration the answers will not be saved.
+6)The quiz duration is 30minutes.
+</pre>
+<input type="checkbox" name="agree" id="agreeId" required/>
+<input type="submit" name="btnSubmit" id="btnsubmitId" value="Agree and continue" onclick="terms();"/>
+
+</div>
+</body>
+</html>
